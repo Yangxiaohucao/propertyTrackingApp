@@ -5,6 +5,12 @@ Built with **React, TypeScript, Prisma, and Express**.
 
 ---
 
+## 📸 Preview
+![Property Tracker Screenshot](preview/screenshot1.png)
+![Property Tracker Screenshot](preview/screenshot2.png)
+
+---
+
 ## ✨ Features
 
 - 🏠 List of all properties with latest valuation and % growth since the last one  
@@ -44,6 +50,7 @@ npm run dev
 cd ../web
 npm install
 npm run dev
+
 
 
 
