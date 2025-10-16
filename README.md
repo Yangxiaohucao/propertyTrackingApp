@@ -6,8 +6,8 @@ Built with **React, TypeScript, Prisma, and Express**.
 ---
 
 ## 📸 Preview
-![Property Tracker Screenshot 1](./preview/screenshot1.png)
-![Property Tracker Screenshot 2](./preview/screenshot2.png)
+![Property Tracker Screenshot 1](./preview/screenshot1.PNG)
+![Property Tracker Screenshot 2](./preview/screenshot2.PNG)
 
 ---
 
