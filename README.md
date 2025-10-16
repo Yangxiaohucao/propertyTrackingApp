@@ -30,17 +30,19 @@ Built with **React, TypeScript, Prisma, and Express**.
 
 ## 🚀 Getting Started
 
-Clone the repository
+### 1️⃣ Setting up the repository
 ```bash
-git clone https://github.com/<your-username>/property-tracker.git
-cd property-tracker
+git clone
 
-Install dependencies
-```bash
-Backend
+### Backend
 cd server
 npm install
 npx prisma generate
+npm run dev
+
+### Frontend
+cd ../web
+npm install
 npm run dev
 
 
