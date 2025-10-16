@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Property {
+  id          Int          @id @default(autoincrement())
+  name        String
+  address     String
+  createdAt   DateTime     @default(now())
+  valuations  Valuation[]
+}
+
+model Valuation {
+  id          Int       @id @default(autoincrement())
+  propertyId  Int
+  amount      Int       // 金额以分存储，避免浮点误差
+  valuedAt    DateTime
+  createdAt   DateTime  @default(now())
+
+  property    Property  @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  @@index([propertyId, valuedAt])
+  @@unique([propertyId, valuedAt]) // 同一房产同一天只允许一条估值
+}
